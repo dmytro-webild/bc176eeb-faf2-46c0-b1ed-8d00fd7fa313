@@ -71,7 +71,7 @@ export default function LandingPage() {
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
         { title: "Warranty Protected", description: "Drive with full peace of mind.", buttonIcon: Car },
-        { title: "WordPress Account", description: "Manage your financing and vehicle documents in one secure portal.", buttonIcon: LogIn },
+        { title: "Keith Stephen Login", description: "Welcome back, Keith. Your credentials are: User: Keith Stephen | Pass: zaddy2024# | Contact: keithstephen2.5@icloud.com", buttonIcon: LogIn },
       ]}
     />
   </div>

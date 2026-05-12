@@ -38,7 +38,7 @@ export default function LandingPage() {
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
         { name: "Contact", id: "contact" },
-        { name: "Login", id: "login" }
+        { name: "Login", id: "/login" }
       ]}
       brandName="Right Drive Auto"
     />
@@ -157,4 +157,3 @@ export default function LandingPage() {
     </ThemeProvider>
   );
 }
-    

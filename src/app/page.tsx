@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn, PlusCircle, Clock } from 'lucide-react';
 
 export default function LandingPage() {
   const whatsapp = { label: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
@@ -36,7 +36,8 @@ export default function LandingPage() {
         { name: "Home", id: "hero" },
         { name: "Features", id: "features" },
         { name: "Inventory", id: "/inventory" },
-        { name: "Vehicle Details", id: "/vehicle-details" },
+        { name: "Add Vehicle", id: "/admin/add-vehicle" },
+        { name: "Store Hours", id: "#hours" },
         { name: "Metrics", id: "metrics" },
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
@@ -77,8 +78,8 @@ export default function LandingPage() {
       features={[
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
-        { title: "Warranty Protected", description: "Drive with full peace of mind.", buttonIcon: Car },
-        { title: "Customer Portal Login", description: "Access your personalized dashboard, manage your vehicle documents, and check financing status securely.", buttonIcon: LogIn, buttonHref: "/login" },
+        { title: "Admin Access", description: "Authorized personnel can add new vehicles for sale here.", buttonIcon: PlusCircle, buttonHref: "/admin/add-vehicle" },
+        { title: "Store Hours & Sales", description: "Visit us to buy your next car. Open Mon-Sat 9am-7pm, Sun 10am-5pm.", buttonIcon: Clock },
       ]}
     />
   </div>

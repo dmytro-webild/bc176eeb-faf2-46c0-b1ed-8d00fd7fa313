@@ -47,7 +47,7 @@ export default function LandingPage() {
   <div id="hero" data-section="hero">
       <HeroBillboardRotatedCarousel
       background={{ variant: "gradient-bars" }}
-      title="Drive Your Dream Car Today"
+      title="Find Your Perfect Pre-Owned Car Today"
       description="At Right Drive Auto, we make buying your next vehicle simple, affordable, and stress-free. Discover a wide selection of quality pre-owned vehicles waiting for you."
       carouselItems={[
         { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-talking-sales-man-car-showroom_1303-15146.jpg" },

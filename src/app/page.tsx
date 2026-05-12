@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn, MessageSquare } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -51,7 +51,8 @@ export default function LandingPage() {
       description="Experience the Right Drive Auto difference. We provide a transparent, stress-free path to owning a reliable vehicle that fits your budget perfectly."
       buttons={[
         { text: "Explore Inventory", href: "#products" },
-        { text: "Contact Sales", href: "#contact" }
+        { text: "Contact Sales", href: "#contact" },
+        { text: "WhatsApp", href: "https://wa.me/message/KI5W4PNHBGUKG1" }
       ]}
       carouselItems={[
         { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-talking-sales-man-car-showroom_1303-15146.jpg" },
@@ -70,7 +71,7 @@ export default function LandingPage() {
       description="We are committed to delivering the best vehicle buying experience in the market."
       textboxLayout="default"
       useInvertedBackground={false}
-      buttons={[{ text: "View Inventory", href: "#products" }]}
+      buttons={[{ text: "View Inventory", href: "#products" }, { text: "WhatsApp Us", href: "https://wa.me/message/KI5W4PNHBGUKG1" }]}
       features={[
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
@@ -144,6 +145,7 @@ export default function LandingPage() {
       background={{ variant: "gradient-bars" }}
       text="Ready to drive your dream? Get in touch today."
       useInvertedBackground={false}
+      buttons={[{ text: "Chat on WhatsApp", href: "https://wa.me/message/KI5W4PNHBGUKG1" }]}
     />
   </div>
 
@@ -157,4 +159,3 @@ export default function LandingPage() {
     </ThemeProvider>
   );
 }
-    

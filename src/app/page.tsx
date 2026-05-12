@@ -9,9 +9,9 @@ import FooterBaseReveal from '@/components/sections/footer/FooterBaseReveal';
 import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboardRotatedCarousel';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import ProductCardOne from '@/components/sections/product/ProductCardOne';
+import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn, MapPin } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
 
 export default function LandingPage() {
   const whatsapp = { label: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
@@ -83,18 +83,20 @@ export default function LandingPage() {
   </div>
 
   <div id="products" data-section="products">
-      <ProductCardOne
+      <ProductCardThree
       title="Inventory"
-      description="Premium selection of pre-owned vehicles."
+      description="Browse our comprehensive selection of quality pre-owned vehicles."
       gridVariant="three-columns-all-equal-width"
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={true}
-      buttons={[{ text: "Check Availability", href: "#contact" }]}
       products={[
-        { id: "1", name: "Executive Sedan", price: "$24,500", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-security-guards-working_23-2148404048.jpg" },
-        { id: "2", name: "Sporty Hatch", price: "$18,900", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
-        { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" }
+        { id: "1", name: "2020 Honda Accord", price: "$22,500", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
+        { id: "2", name: "2019 Toyota Camry", price: "$21,000", imageSrc: "http://img.b2bpic.net/man-buying-car-showroom_1303-14589.jpg" },
+        { id: "3", name: "2021 Ford Escape", price: "$24,800", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg" },
+        { id: "4", name: "2018 Jeep Grand Cherokee", price: "$28,900", imageSrc: "http://img.b2bpic.net/high-angle-security-guards-working_23-2148404048.jpg" },
+        { id: "5", name: "2020 Nissan Altima", price: "$19,500", imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg" },
+        { id: "6", name: "2017 Chevrolet Tahoe", price: "$31,000", imageSrc: "http://img.b2bpic.net/happy-customers-car-dealership_23-2149106166.jpg" }
       ]}
     />
   </div>

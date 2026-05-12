@@ -11,9 +11,11 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn, MessageCircle } from 'lucide-react';
 
 export default function LandingPage() {
+  const whatsapp = { text: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
+
   return (
     <ThemeProvider
         defaultButtonVariant="icon-arrow"
@@ -133,6 +135,7 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       faqsAnimation="slide-up"
+      buttons={[whatsapp]}
       faqs={[
         { id: "1", title: "Do you offer test drives?", content: "Yes, all vehicles are available for testing." },
         { id: "2", title: "Financing options?", content: "We have tailored plans for all credit histories." }
@@ -144,6 +147,7 @@ export default function LandingPage() {
       <ContactText
       background={{ variant: "gradient-bars" }}
       text="Ready to drive your dream? Get in touch today."
+      buttons={[whatsapp]}
       useInvertedBackground={false}
     />
   </div>
@@ -151,7 +155,10 @@ export default function LandingPage() {
   <div id="footer" data-section="footer">
       <FooterBaseReveal
       logoText="Right Drive Auto"
-      columns={[{ title: "Company", items: [{ label: "Home", href: "#" }] }]}
+      columns={[
+        { title: "Support", items: [whatsapp] },
+        { title: "Company", items: [{ label: "Home", href: "#" }] }
+      ]}
     />
   </div>
       </ReactLenis>

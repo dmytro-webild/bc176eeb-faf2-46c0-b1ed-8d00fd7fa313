@@ -8,7 +8,18 @@ export default function LoginPage() {
   const [password, setPassword] = useState('');
 
   return (
-    <ThemeProvider>
+    <ThemeProvider
+      defaultButtonVariant="text-stagger"
+      defaultTextAnimation="entrance-slide"
+      borderRadius="rounded"
+      contentWidth="medium"
+      sizing="medium"
+      background="circleGradient"
+      cardStyle="glass-elevated"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
+      headingFontWeight="normal"
+    >
       <div className="min-h-screen flex items-center justify-center p-8">
         <div className="w-full max-w-md bg-[var(--card)] p-8 rounded-[var(--border-radius)] border border-[var(--accent)]">
           <h1 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Customer Login</h1>

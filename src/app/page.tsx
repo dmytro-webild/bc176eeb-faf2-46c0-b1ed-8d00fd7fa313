@@ -49,6 +49,10 @@ export default function LandingPage() {
       background={{ variant: "gradient-bars" }}
       title="Quality Pre-Owned Vehicles at Prices You Can Afford"
       description="Experience the Right Drive Auto difference. We provide a transparent, stress-free path to owning a reliable vehicle that fits your budget perfectly."
+      buttons={[
+        { text: "Explore Inventory", href: "#products" },
+        { text: "Contact Sales", href: "#contact" }
+      ]}
       carouselItems={[
         { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-talking-sales-man-car-showroom_1303-15146.jpg" },
         { id: "2", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg" },
@@ -82,14 +86,12 @@ export default function LandingPage() {
       description="Premium selection of pre-owned vehicles."
       gridVariant="three-columns-all-equal-width"
       animationType="slide-up"
-      textboxLayout="split-actions"
+      textboxLayout="default"
       useInvertedBackground={true}
-      buttons={[{ text: "Browse All", href: "#" }, { text: "Contact Sales", href: "#contact" }]}
       products={[
         { id: "1", name: "Executive Sedan", price: "$24,500", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-security-guards-working_23-2148404048.jpg" },
         { id: "2", name: "Sporty Hatch", price: "$18,900", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
-        { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" },
-        { id: "4", name: "Family SUV", price: "$29,000", imageSrc: "http://img.b2bpic.net/free-photo/happy-tourist-couple-long-shot_23-2148637299.jpg" }
+        { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" }
       ]}
     />
   </div>

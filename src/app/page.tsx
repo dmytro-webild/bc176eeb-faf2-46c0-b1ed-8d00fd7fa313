@@ -35,7 +35,7 @@ export default function LandingPage() {
       navItems={[
         { name: "Home", id: "hero" },
         { name: "Features", id: "features" },
-        { name: "Inventory", id: "products" },
+        { name: "Inventory", id: "/inventory" },
         { name: "Metrics", id: "metrics" },
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
@@ -52,7 +52,7 @@ export default function LandingPage() {
       title="Quality Pre-Owned Vehicles at Prices You Can Afford"
       description="Experience the Right Drive Auto difference. We provide a transparent, stress-free path to owning a reliable vehicle that fits your budget perfectly."
       buttons={[
-        { text: "Explore Inventory", href: "#products" },
+        { text: "Explore Inventory", href: "/inventory" },
         { text: "Contact Sales", href: "#contact" }
       ]}
       carouselItems={[
@@ -72,7 +72,7 @@ export default function LandingPage() {
       description="We are committed to delivering the best vehicle buying experience in the market."
       textboxLayout="default"
       useInvertedBackground={false}
-      buttons={[{ text: "View Inventory", href: "#products" }]}
+      buttons={[{ text: "View Inventory", href: "/inventory" }]}
       features={[
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },

@@ -36,6 +36,7 @@ export default function LandingPage() {
         { name: "Home", id: "hero" },
         { name: "Features", id: "features" },
         { name: "Inventory", id: "/inventory" },
+        { name: "Vehicle Details", id: "/vehicle-details" },
         { name: "Metrics", id: "metrics" },
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
@@ -91,12 +92,12 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={true}
       products={[
-        { id: "1", name: "2020 Honda Accord", price: "$22,500", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg?_wi=1" },
-        { id: "2", name: "2019 Toyota Camry", price: "$21,000", imageSrc: "http://img.b2bpic.net/man-buying-car-showroom_1303-14589.jpg?_wi=2" },
-        { id: "3", name: "2021 Ford Escape", price: "$24,800", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg?_wi=2" },
-        { id: "4", name: "2018 Jeep Grand Cherokee", price: "$28,900", imageSrc: "http://img.b2bpic.net/high-angle-security-guards-working_23-2148404048.jpg?_wi=1" },
-        { id: "5", name: "2020 Nissan Altima", price: "$19,500", imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg?_wi=2" },
-        { id: "6", name: "2017 Chevrolet Tahoe", price: "$31,000", imageSrc: "http://img.b2bpic.net/happy-customers-car-dealership_23-2149106166.jpg?_wi=2" }
+        { id: "1", name: "2020 Honda Accord", price: "$22,500", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg?_wi=1", onProductClick: () => window.location.href = '/vehicle-details' },
+        { id: "2", name: "2019 Toyota Camry", price: "$21,000", imageSrc: "http://img.b2bpic.net/man-buying-car-showroom_1303-14589.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
+        { id: "3", name: "2021 Ford Escape", price: "$24,800", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
+        { id: "4", name: "2018 Jeep Grand Cherokee", price: "$28,900", imageSrc: "http://img.b2bpic.net/high-angle-security-guards-working_23-2148404048.jpg?_wi=1", onProductClick: () => window.location.href = '/vehicle-details' },
+        { id: "5", name: "2020 Nissan Altima", price: "$19,500", imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
+        { id: "6", name: "2017 Chevrolet Tahoe", price: "$31,000", imageSrc: "http://img.b2bpic.net/happy-customers-car-dealership_23-2149106166.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' }
       ]}
     />
   </div>
@@ -161,7 +162,7 @@ export default function LandingPage() {
       columns={[
         { title: "Support", items: [whatsapp] },
         { title: "Location", items: [{ label: "8320 Gtwy Blvd E, El Paso, TX 79907", href: "#" }] },
-        { title: "Company", items: [{ label: "Home", href: "#" }] }
+        { title: "Company", items: [{ label: "Home", href: "/" }] }
       ]}
     />
   </div>

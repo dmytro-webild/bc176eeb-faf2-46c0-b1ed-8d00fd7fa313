@@ -84,7 +84,7 @@ export default function LandingPage() {
       useInvertedBackground={true}
       products={[
         { id: "1", name: "Executive Sedan", price: "$24,500", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-security-guards-working_23-2148404048.jpg" },
-        { id: "2", name: "Sporty Hatch", price: "$18,900", imageSrc: "http://img.b2bpic.net/free-photo/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
+        { id: "2", name: "Sporty Hatch", price: "$18,900", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
         { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" }
       ]}
     />
@@ -96,6 +96,7 @@ export default function LandingPage() {
       gridVariant="uniform-all-items-equal"
       animationType="slide-up"
       textboxLayout="default"
+      useInvertedBackground={false}
       metrics={[
         { id: "1", value: "1500+", title: "Cars Sold", description: "Vehicles on the road", icon: Car },
         { id: "2", value: "98%", title: "Satisfied", description: "Happy customers", icon: ShieldCheck }
@@ -106,6 +107,7 @@ export default function LandingPage() {
   <div id="testimonials" data-section="testimonials">
       <TestimonialCardTwo
       title="Driver Reviews"
+      description="See why our customers love their new vehicles."
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={true}
@@ -119,7 +121,9 @@ export default function LandingPage() {
   <div id="faq" data-section="faq">
       <FaqBase
       title="Help Center"
+      description="Frequently asked questions about our process."
       textboxLayout="default"
+      useInvertedBackground={false}
       faqsAnimation="slide-up"
       faqs={[
         { id: "1", title: "Do you offer test drives?", content: "Yes, all vehicles are available for testing." },
@@ -132,6 +136,7 @@ export default function LandingPage() {
       <ContactText
       background={{ variant: "gradient-bars" }}
       text="Ready to drive your dream? Get in touch today."
+      useInvertedBackground={false}
     />
   </div>
 

@@ -82,12 +82,14 @@ export default function LandingPage() {
       description="Premium selection of pre-owned vehicles."
       gridVariant="three-columns-all-equal-width"
       animationType="slide-up"
-      textboxLayout="default"
+      textboxLayout="split-actions"
       useInvertedBackground={true}
+      buttons={[{ text: "Browse All", href: "#" }, { text: "Contact Sales", href: "#contact" }]}
       products={[
         { id: "1", name: "Executive Sedan", price: "$24,500", imageSrc: "http://img.b2bpic.net/free-photo/high-angle-security-guards-working_23-2148404048.jpg" },
         { id: "2", name: "Sporty Hatch", price: "$18,900", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg" },
-        { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" }
+        { id: "3", name: "Premium Coupe", price: "$32,000", imageSrc: "http://img.b2bpic.net/free-photo/two-stylish-women-car-salon_1157-20866.jpg" },
+        { id: "4", name: "Family SUV", price: "$29,000", imageSrc: "http://img.b2bpic.net/free-photo/happy-tourist-couple-long-shot_23-2148637299.jpg" }
       ]}
     />
   </div>

@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn, MapPin } from 'lucide-react';
 
 export default function LandingPage() {
   const whatsapp = { label: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
@@ -138,7 +138,8 @@ export default function LandingPage() {
       buttons={[{ text: whatsapp.label, href: whatsapp.href }]}
       faqs={[
         { id: "1", title: "Do you offer test drives?", content: "Yes, all vehicles are available for testing." },
-        { id: "2", title: "Financing options?", content: "We have tailored plans for all credit histories." }
+        { id: "2", title: "Financing options?", content: "We have tailored plans for all credit histories." },
+        { id: "3", title: "Where are you located?", content: "8320 Gtwy Blvd E, El Paso, TX 79907, United States" }
       ]}
     />
   </div>
@@ -146,7 +147,7 @@ export default function LandingPage() {
   <div id="contact" data-section="contact">
       <ContactText
       background={{ variant: "gradient-bars" }}
-      text="Ready to drive your dream? Get in touch today."
+      text="Ready to drive your dream? Get in touch today at 8320 Gtwy Blvd E, El Paso, TX 79907."
       buttons={[{ text: whatsapp.label, href: whatsapp.href }]}
       useInvertedBackground={false}
     />
@@ -157,6 +158,7 @@ export default function LandingPage() {
       logoText="Right Drive Auto"
       columns={[
         { title: "Support", items: [whatsapp] },
+        { title: "Location", items: [{ label: "8320 Gtwy Blvd E, El Paso, TX 79907", href: "#" }] },
         { title: "Company", items: [{ label: "Home", href: "#" }] }
       ]}
     />

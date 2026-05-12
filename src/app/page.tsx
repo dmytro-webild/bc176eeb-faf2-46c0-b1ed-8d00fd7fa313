@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, Clock } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, Clock, LogIn } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -38,6 +38,7 @@ export default function LandingPage() {
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
         { name: "Contact", id: "contact" },
+        { name: "WordPress Login", id: "login" }
       ]}
       brandName="Right Drive Auto"
     />
@@ -66,10 +67,10 @@ export default function LandingPage() {
       textboxLayout="default"
       useInvertedBackground={false}
       features={[
-        { title: "Inspected Excellence", description: "Rigorous multi-point inspections tailored to your needs.", buttonIcon: ShieldCheck },
+        { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
         { title: "Warranty Protected", description: "Drive with full peace of mind.", buttonIcon: Car },
-        { title: "Swift Service", description: "Fast processing and delivery.", buttonIcon: Clock },
+        { title: "WordPress Account", description: "Log in to your client portal for exclusive deals.", buttonIcon: LogIn },
       ]}
     />
   </div>

@@ -66,6 +66,7 @@ export default function LandingPage() {
       description="We are committed to delivering the best vehicle buying experience in the market."
       textboxLayout="default"
       useInvertedBackground={false}
+      buttons={[{ text: "View Inventory", href: "#products" }]}
       features={[
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },

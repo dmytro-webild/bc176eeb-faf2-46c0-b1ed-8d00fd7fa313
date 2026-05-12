@@ -50,7 +50,7 @@ export default function LandingPage() {
       description="At Right Drive Auto, we make buying your next vehicle simple, affordable, and stress-free. Discover a wide selection of quality pre-owned vehicles waiting for you."
       carouselItems={[
         { id: "1", imageSrc: "http://img.b2bpic.net/free-photo/woman-talking-sales-man-car-showroom_1303-15146.jpg" },
-        { id: "2", imageSrc: "http://img.b2bpic.net/free-photo/mechanics-repairing-car-workshop_329181-11856.jpg" },
+        { id: "2", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg" },
         { id: "3", imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg" },
         { id: "4", imageSrc: "http://img.b2bpic.net/female-mechanic-preparing-check-list_1170-1444.jpg" },
         { id: "5", imageSrc: "http://img.b2bpic.net/man-buying-car-showroom_1303-14589.jpg" },
@@ -93,6 +93,7 @@ export default function LandingPage() {
   <div id="metrics" data-section="metrics">
       <MetricCardOne
       title="Our Impact"
+      description="Key performance indicators of our service."
       gridVariant="uniform-all-items-equal"
       animationType="slide-up"
       textboxLayout="default"

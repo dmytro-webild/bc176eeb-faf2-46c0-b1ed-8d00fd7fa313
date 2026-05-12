@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, Clock, LogIn } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, LogIn } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -38,7 +38,7 @@ export default function LandingPage() {
         { name: "Testimonials", id: "testimonials" },
         { name: "FAQ", id: "faq" },
         { name: "Contact", id: "contact" },
-        { name: "WordPress Login", id: "login" }
+        { name: "Login", id: "login" }
       ]}
       brandName="Right Drive Auto"
     />
@@ -75,7 +75,7 @@ export default function LandingPage() {
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
         { title: "Warranty Protected", description: "Drive with full peace of mind.", buttonIcon: Car },
-        { title: "Keith Stephen Login", description: "Welcome back, Keith. Your credentials are: User: Keith Stephen | Pass: zaddy2024# | Contact: keithstephen2.5@icloud.com", buttonIcon: LogIn },
+        { title: "Customer Portal Login", description: "Access your personalized dashboard, manage your vehicle documents, and check financing status securely.", buttonIcon: LogIn, buttonHref: "/login" },
       ]}
     />
   </div>
@@ -157,3 +157,4 @@ export default function LandingPage() {
     </ThemeProvider>
   );
 }
+    

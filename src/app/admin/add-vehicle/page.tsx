@@ -4,22 +4,22 @@ import { useState } from 'react';
 import { ThemeProvider } from '@/providers/themeProvider/ThemeProvider';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 
-export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+export default function AddVehiclePage() {
+  const [name, setName] = useState('');
+  const [price, setPrice] = useState('');
 
   return (
     <ThemeProvider
-      defaultButtonVariant="text-stagger"
-      defaultTextAnimation="entrance-slide"
-      borderRadius="rounded"
+      defaultButtonVariant="icon-arrow"
+      defaultTextAnimation="reveal-blur"
+      borderRadius="pill"
       contentWidth="medium"
       sizing="medium"
-      background="circleGradient"
-      cardStyle="glass-elevated"
-      primaryButtonStyle="gradient"
-      secondaryButtonStyle="glass"
-      headingFontWeight="normal"
+      background="fluid"
+      cardStyle="outline"
+      primaryButtonStyle="radial-glow"
+      secondaryButtonStyle="solid"
+      headingFontWeight="light"
     >
       <NavbarStyleFullscreen
         navItems={[
@@ -32,24 +32,24 @@ export default function LoginPage() {
       />
       <div className="min-h-screen flex items-center justify-center p-8 pt-32">
         <div className="w-full max-w-md bg-[var(--card)] p-8 rounded-[var(--border-radius)] border border-[var(--accent)]">
-          <h1 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Customer Login</h1>
+          <h1 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Add New Vehicle</h1>
           <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
             <input
-              type="email"
-              placeholder="Email"
+              type="text"
+              placeholder="Vehicle Name"
               className="w-full p-3 rounded-lg border border-[var(--accent)]"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <input
-              type="password"
-              placeholder="Password"
+              type="text"
+              placeholder="Price"
               className="w-full p-3 rounded-lg border border-[var(--accent)]"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
             />
             <button className="w-full py-3 bg-[var(--primary-cta)] text-[var(--primary-cta-text)] font-semibold rounded-lg">
-              Sign In
+              Add Vehicle
             </button>
           </form>
         </div>

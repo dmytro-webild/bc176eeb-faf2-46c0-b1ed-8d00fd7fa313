@@ -22,6 +22,7 @@ export default function InventoryPage() {
         navItems={[
             { name: "Home", id: "/" },
             { name: "Inventory", id: "/inventory" },
+            { name: "Add Vehicle", id: "/admin/add-vehicle" },
             { name: "Login", id: "/login" }
         ]}
         brandName="Right Drive Auto"

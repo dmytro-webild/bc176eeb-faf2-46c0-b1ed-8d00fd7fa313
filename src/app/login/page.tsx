@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { ThemeProvider } from '@/providers/themeProvider/ThemeProvider';
-import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -21,19 +20,6 @@ export default function LoginPage() {
       secondaryButtonStyle="glass"
       headingFontWeight="normal"
     >
-      <NavbarStyleFullscreen
-        navItems={[
-          { name: "Home", id: "/" },
-          { name: "Features", id: "/#features" },
-          { name: "Inventory", id: "/#products" },
-          { name: "Metrics", id: "/#metrics" },
-          { name: "Testimonials", id: "/#testimonials" },
-          { name: "FAQ", id: "/#faq" },
-          { name: "Contact", id: "/#contact" },
-          { name: "Login", id: "/login" }
-        ]}
-        brandName="Right Drive Auto"
-      />
       <div className="min-h-screen flex items-center justify-center p-8">
         <div className="w-full max-w-md bg-[var(--card)] p-8 rounded-[var(--border-radius)] border border-[var(--accent)]">
           <h1 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Customer Login</h1>

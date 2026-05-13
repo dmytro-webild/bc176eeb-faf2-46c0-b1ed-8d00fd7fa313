@@ -6,6 +6,7 @@ import "@/lib/gsap-setup";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Public_Sans } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 
 
 
@@ -14,7 +15,15 @@ export const metadata: Metadata = {
   description: 'Find quality pre-owned vehicles at Right Drive Auto. Easy financing, multi-point inspections, and friendly service.',
 };
 
-const publicSans = Public_Sans({ variable: "--font-public-sans", subsets: ["latin"], });
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
@@ -24,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${publicSans.variable} antialiased`}>
+        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
           
           {children}
           <script

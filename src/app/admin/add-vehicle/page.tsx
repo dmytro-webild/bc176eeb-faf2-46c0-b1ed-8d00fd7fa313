@@ -8,6 +8,10 @@ export default function AddVehiclePage() {
   const [name, setName] = useState('');
   const [price, setPrice] = useState('');
 
+  const vehicleImages = [
+    "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821975-7044vtay.jpg",    "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-zv4nr4yg.jpg",    "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-apauiaiu.jpg",    "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-r42n1lup.jpg",    "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-03ign7ah.jpg"
+  ];
+
   return (
     <ThemeProvider
       defaultButtonVariant="icon-arrow"
@@ -48,6 +52,11 @@ export default function AddVehiclePage() {
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
+            <div className="grid grid-cols-5 gap-2">
+              {vehicleImages.map((src, i) => (
+                <img key={i} src={src} alt="Preview" className="w-full h-12 object-cover rounded shadow" />
+              ))}
+            </div>
             <button className="w-full py-3 bg-[var(--primary-cta)] text-[var(--primary-cta-text)] font-semibold rounded-lg">
               Add Vehicle
             </button>

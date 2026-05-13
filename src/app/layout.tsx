@@ -9,6 +9,7 @@ import { Public_Sans } from "next/font/google";
 import { DM_Sans } from "next/font/google";
 import { Poppins } from "next/font/google";
 import { Montserrat } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 
 
 
@@ -20,8 +21,9 @@ export const metadata: Metadata = {
 
 
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+
+const sourceSans3 = Source_Sans_3({
+  variable: "--font-source-sans-3",
   subsets: ["latin"],
 });
 
@@ -33,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${montserrat.variable} antialiased`}>
+        <body className={`${sourceSans3.variable} antialiased`}>
           
           {children}
           <script

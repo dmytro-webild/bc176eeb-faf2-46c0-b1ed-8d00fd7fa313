@@ -11,7 +11,7 @@ import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import ProductCardThree from '@/components/sections/product/ProductCardThree';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
-import { Car, ShieldCheck, DollarSign, LogIn, PlusCircle, Clock } from 'lucide-react';
+import { Car, ShieldCheck, DollarSign, Clock } from 'lucide-react';
 
 export default function LandingPage() {
   const whatsapp = { label: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
@@ -36,7 +36,6 @@ export default function LandingPage() {
         { name: "Home", id: "hero" },
         { name: "Features", id: "features" },
         { name: "Inventory", id: "/inventory" },
-        { name: "Add Vehicle", id: "/admin/add-vehicle" },
         { name: "Store Hours", id: "#hours" },
         { name: "Metrics", id: "metrics" },
         { name: "Testimonials", id: "testimonials" },
@@ -78,8 +77,9 @@ export default function LandingPage() {
       features={[
         { title: "Inspected Excellence", description: "Rigorous multi-point inspections and stress-free financing tailored to your needs.", buttonIcon: ShieldCheck },
         { title: "Transparent Financing", description: "Stress-free financing tailored to your needs.", buttonIcon: DollarSign },
-        { title: "Admin Access", description: "Authorized personnel can add new vehicles for sale here.", buttonIcon: PlusCircle, buttonHref: "/admin/add-vehicle" },
-        { title: "Store Hours & Sales", description: "Visit us to buy your next car. Open Mon-Sat 9am-7pm, Sun 10am-5pm.", buttonIcon: Clock },
+        {
+          title: "Store Hours & Sales",          description: "Visit us to buy your next car. Open Mon-Sat 9am-7pm, Sun 10am-5pm.",          buttonIcon: Clock
+        }
       ]}
     />
   </div>
@@ -92,14 +92,7 @@ export default function LandingPage() {
       animationType="slide-up"
       textboxLayout="default"
       useInvertedBackground={true}
-      products={[
-        { id: "1", name: "2020 Honda Accord", price: "$22,500", imageSrc: "http://img.b2bpic.net/front-headlamp-with-brilliant-reflections-body-car_146671-14974.jpg?_wi=1", onProductClick: () => window.location.href = '/vehicle-details' },
-        { id: "2", name: "2019 Toyota Camry", price: "$21,000", imageSrc: "http://img.b2bpic.net/man-buying-car-showroom_1303-14589.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
-        { id: "3", name: "2021 Ford Escape", price: "$24,800", imageSrc: "http://img.b2bpic.net/mechanics-repairing-car-workshop_329181-11856.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
-        { id: "4", name: "2018 Jeep Grand Cherokee", price: "$28,900", imageSrc: "http://img.b2bpic.net/high-angle-security-guards-working_23-2148404048.jpg?_wi=1", onProductClick: () => window.location.href = '/vehicle-details' },
-        { id: "5", name: "2020 Nissan Altima", price: "$19,500", imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' },
-        { id: "6", name: "2017 Chevrolet Tahoe", price: "$31,000", imageSrc: "http://img.b2bpic.net/happy-customers-car-dealership_23-2149106166.jpg?_wi=2", onProductClick: () => window.location.href = '/vehicle-details' }
-      ]}
+      products={[]}
     />
   </div>
 

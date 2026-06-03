@@ -2,14 +2,32 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
-import ProductCardThree from '@/components/sections/product/ProductCardThree';
+import FeatureCardTwentySix from '@/components/sections/feature/FeatureCardTwentySix';
+import { ArrowRight } from 'lucide-react'; // Needed for buttonIcon
 
 export default function InventoryPage() {
-  const products = [];
-
-  const handleEnquire = () => {
-    window.location.href = 'mailto:info@rightdriveauto.co';
-  };
+  const tiktokVideos = [
+    {
+      title: "Daily Car Tips!",      description: "Quick hacks to keep your ride in top shape. Follow us for more!",      videoSrc: "https://assets.mixkit.co/videos/preview/mixkit-modern-car-showcase-4364-large.mp4", // Placeholder video
+      imageAlt: "TikTok video: Daily Car Tips",      buttonIcon: ArrowRight, // Directly in feature item
+      buttonHref: "https://www.tiktok.com/@rightdriveautotx/video/7300000000000000001" // Dummy TikTok video link
+    },
+    {
+      title: "POV: Test Driving Your Dream Car",      description: "Come experience the thrill at Right Drive Auto. What's your dream car?",      videoSrc: "https://assets.mixkit.co/videos/preview/mixkit-driving-on-the-highway-in-a-yellow-car-5415-large.mp4", // Placeholder video
+      imageAlt: "TikTok video: Test Drive POV",      buttonIcon: ArrowRight,
+      buttonHref: "https://www.tiktok.com/@rightdriveautotx/video/7300000000000000002"
+    },
+    {
+      title: "Behind the Scenes: Detailing",      description: "See how we get our vehicles showroom ready. Precision and care in every detail!",      videoSrc: "https://assets.mixkit.co/videos/preview/mixkit-worker-cleaning-car-interior-with-a-sponge-4404-large.mp4", // Placeholder video
+      imageAlt: "TikTok video: Detailing process",      buttonIcon: ArrowRight,
+      buttonHref: "https://www.tiktok.com/@rightdriveautotx/video/7300000000000000003"
+    },
+    {
+      title: "New Inventory Arrivals!",      description: "First look at our freshest stock! Don't miss out on your next car.",      videoSrc: "https://assets.mixkit.co/videos/preview/mixkit-car-dealer-looking-at-new-car-5626-large.mp4", // Placeholder video
+      imageAlt: "TikTok video: New Arrivals",      buttonIcon: ArrowRight,
+      buttonHref: "https://www.tiktok.com/@rightdriveautotx/video/7300000000000000004"
+    }
+  ];
 
   return (
     <ThemeProvider
@@ -40,19 +58,13 @@ export default function InventoryPage() {
         brandName="Right Drive Auto"
       />
       <div className="pt-32 pb-20">
-        <ProductCardThree
-            title="Vehicles for Sale"
-            description="Browse our comprehensive selection of quality pre-owned vehicles. Click any vehicle to enquire."
-            gridVariant="three-columns-all-equal-width"
-            animationType="slide-up"
+        <FeatureCardTwentySix
+            title="Latest from @rightdriveautotx"
+            description="Explore our TikTok feed for daily insights, car care tips, and exclusive looks at new arrivals. Each video is playable inline, so dive right in!"
             textboxLayout="default"
             useInvertedBackground={false}
-            products={products.map(p => ({
-                ...p,
-                priceButtonProps: {
-                    text: "Enquire",                    onClick: handleEnquire
-                }
-            }))}
+            features={tiktokVideos}
+            buttons={[{ text: "View all on TikTok", href: "https://www.tiktok.com/@rightdriveautotx" }]} // Global button
         />
       </div>
     </ThemeProvider>

@@ -10,7 +10,8 @@ import HeroBillboardRotatedCarousel from '@/components/sections/hero/HeroBillboa
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
 import { Car, ShieldCheck, DollarSign, Clock } from 'lucide-react';
-import BlogCardThree from '@/components/sections/blog/BlogCardThree'; // New import
+import BlogCardThree from '@/components/sections/blog/BlogCardThree';
+import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 
 export default function LandingPage() {
   const whatsapp = { label: "Chat on WhatsApp", href: "https://wa.me/1234567890" };
@@ -96,16 +97,16 @@ export default function LandingPage() {
       gridVariant="three-columns-all-equal-width"
       blogs={[
         {
-          id: "1",          category: "Tips",          title: "How to Check Your Oil",          excerpt: "Quick guide on keeping your engine healthy.",          imageSrc: "http://img.b2bpic.net/mechanic-checking-oil-car_482257-22906.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-26",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank")
+          id: "1",          category: "Tips",          title: "How to Check Your Oil",          excerpt: "Quick guide on keeping your engine healthy.",          imageSrc: "http://img.b2bpic.net/mechanic-checking-oil-car_482257-22906.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-26",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank"), authorAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=RightDriveAuto"
         },
         {
-          id: "2",          category: "Showcase",          title: "New Arrival: Honda Civic!",          excerpt: "Get a sneak peek at our latest inventory addition.",          imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-25",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank")
+          id: "2",          category: "Showcase",          title: "New Arrival: Honda Civic!",          excerpt: "Get a sneak peek at our latest inventory addition.",          imageSrc: "http://img.b2bpic.net/dealership-salesman-answering-customers-questions-about-cars_482257-124577.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-25",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank"), authorAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=RightDriveAuto"
         },
         {
-          id: "3",          category: "Fun",          title: "POV: Test Driving Your Dream Car",          excerpt: "Experience the thrill from the driver's seat!",          imageSrc: "http://img.b2bpic.net/free-photo/side-view-man-driving-car_23-2148906969.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-24",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank")
+          id: "3",          category: "Fun",          title: "POV: Test Driving Your Dream Car",          excerpt: "Experience the thrill from the driver's seat!",          imageSrc: "http://img.b2bpic.net/free-photo/side-view-man-driving-car_23-2148906969.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-24",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank"), authorAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=RightDriveAuto"
         },
         {
-          id: "4",          category: "Maintenance",          title: "Tire Pressure Essentials",          excerpt: "Don't forget to check your tire pressure for safety.",          imageSrc: "http://img.b2bpic.net/young-mechanic-standing-garage-holding-tire-car_342744-1234.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-23",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank")
+          id: "4",          category: "Maintenance",          title: "Tire Pressure Essentials",          excerpt: "Don't forget to check your tire pressure for safety.",          imageSrc: "http://img.b2bpic.net/young-mechanic-standing-garage-holding-tire-car_342744-1234.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-23",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank"), authorAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=RightDriveAuto"
         }
       ]}
     />

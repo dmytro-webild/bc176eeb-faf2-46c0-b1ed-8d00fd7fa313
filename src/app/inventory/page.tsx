@@ -29,10 +29,10 @@ export default function InventoryPage() {
   const dummyProducts = [
     {
       id: "1",      category: "SUV",      name: "2020 Honda CR-V",      price: "$25,000",      rating: 4,
-      reviewCount: "85",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821975-7044vtay.jpg",      imageAlt: "2020 Honda CR-V"},
+      reviewCount: "85",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821975-7044vtay.jpg?_wi=1",      imageAlt: "2020 Honda CR-V"},
     {
       id: "2",      category: "Sedan",      name: "2022 Toyota Camry",      price: "$28,500",      rating: 5,
-      reviewCount: "120",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-zv4nr4yg.jpg",      imageAlt: "2022 Toyota Camry"},
+      reviewCount: "120",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-zv4nr4yg.jpg?_wi=1",      imageAlt: "2022 Toyota Camry"},
     {
       id: "3",      category: "Truck",      name: "2019 Ford F-150",      price: "$35,000",      rating: 4,
       reviewCount: "90",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-apauiaiu.jpg",      imageAlt: "2019 Ford F-150"},
@@ -44,10 +44,10 @@ export default function InventoryPage() {
       reviewCount: "45",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-03ign7ah.jpg",      imageAlt: "2018 Porsche 718 Cayman"},
     {
       id: "6",      category: "SUV",      name: "2023 Kia Telluride",      price: "$38,000",      rating: 5,
-      reviewCount: "110",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821975-7044vtay.jpg",      imageAlt: "2023 Kia Telluride"},
+      reviewCount: "110",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821975-7044vtay.jpg?_wi=2",      imageAlt: "2023 Kia Telluride"},
     {
       id: "7",      category: "Sedan",      name: "2020 Honda Civic",      price: "$19,800",      rating: 4,
-      reviewCount: "95",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-zv4nr4yg.jpg",      imageAlt: "2020 Honda Civic"},
+      reviewCount: "95",      imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DcMkOoL2COCmBJKYkA7aitVXFP/uploaded-1778684821976-zv4nr4yg.jpg?_wi=2",      imageAlt: "2020 Honda Civic"},
   ];
 
   // Basic filtering logic

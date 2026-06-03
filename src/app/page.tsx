@@ -94,7 +94,6 @@ export default function LandingPage() {
       useInvertedBackground={true}
       carouselMode="auto"
       uniformGridCustomHeightClasses="min-h-[400px]"
-      gridVariant="three-columns-all-equal-width"
       blogs={[
         {
           id: "1",          category: "Tips",          title: "How to Check Your Oil",          excerpt: "Quick guide on keeping your engine healthy.",          imageSrc: "http://img.b2bpic.net/mechanic-checking-oil-car_482257-22906.jpg?_wi=1",          authorName: "@rightdriveautotx",          date: "2023-10-26",          onBlogClick: () => window.open("https://www.tiktok.com/@rightdriveautotx", "_blank"), authorAvatar: "https://api.dicebear.com/7.x/initials/svg?seed=RightDriveAuto"

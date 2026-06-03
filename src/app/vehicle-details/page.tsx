@@ -26,9 +26,15 @@ export default function VehicleDetailsPage() {
         <NavbarStyleFullscreen
           navItems={[
             { name: "Home", id: "/" },
+            { name: "Features", id: "features" },
             { name: "Inventory", id: "/inventory" },
-            { name: "Add Vehicle", id: "/admin/add-vehicle" },
-            { name: "Login", id: "/login" }
+            { name: "Store Hours", id: "#hours" },
+            { name: "Metrics", id: "metrics" },
+            { name: "Testimonials", id: "testimonials" },
+            { name: "FAQ", id: "faq" },
+            { name: "Contact", id: "contact" },
+            { name: "Login", id: "/login" },
+            { name: "Add Vehicle", id: "/admin/add-vehicle" }
           ]}
           brandName="Right Drive Auto"
         />
